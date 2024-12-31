@@ -1,2 +1,1 @@
-# VIPs
-The Vana Improvement Proposal (VIP) repository
+# Vana Improvement Proposals (VIPs)
