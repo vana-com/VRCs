@@ -2,7 +2,7 @@
 
 | VRC | Title | Status | Type | Author | Created |
 |-----|--------|--------|------|---------|----------|
-| 1 | VRC Purpose and Guidelines | Final | Process | Anna Kazlauskas <annakaz@opendatalabs.xyz> | 2024-12-30 |
+| 1 | VRC Purpose and Guidelines | Final | Process | Anna Kazlauskas <annakaz@opendatalabs.xyz> | 2025-1-1 |
 
 ## What is a VRC?
 
