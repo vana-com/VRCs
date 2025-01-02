@@ -6,7 +6,7 @@
 
 ## Abstract
 
-This VRC proposes introducing unique wallet contributions with verified data as a performance metric for DLP rankings and rewards. The proposal introduces a scoring system that accounts for 20% of a DLP's total score while maintaining the existing staking metric at 80%. This change aims to incentivize broader participation and higher-quality data contributions within DLPs.
+This VRC proposes introducing unique wallet contributions with verified data as a performance metric for DLP rankings and rewards. The proposal introduces a rating system that accounts for 20% of a DLP's total rating while maintaining the existing staking metric at 80%. This change aims to incentivize broader participation and higher-quality data contributions within DLPs.
 
 ## Motivation
 
@@ -18,23 +18,23 @@ The current DLP ranking system relies solely on staked VANA amounts, which may n
 
 ## Specification
 
-### Scoring System
+### Rating System
 ```
-Total Score = (Staking Score * 0.8) + (Performance Score * 0.2)
+Total Rating = (Staking Rating * 0.8) + (Performance Rating * 0.2)
 
 Where:
-Staking Score = (DLP Staked Amount / Total Network Staked Amount) * 100
-Performance Score = (DLP Unique Wallets With Verified Data This Epoch / Total Unique Wallets with Verified Data This Epoch) * 100
+Staking Rating = (DLP Staked Amount / Total Network Staked Amount) * 100
+Performance Rating = (DLP Unique Wallets With Verified Data This Epoch / Total Unique Wallets with Verified Data This Epoch) * 100
 ```
 
 ### Oracle Service
 - Tracks unique wallet contributions via subgraph queries
-- Updates scores every 30 minutes
-- Uploads final scores to blockchain
+- Updates ratings every 30 minutes
+- Uploads final ratings to blockchain
 - Implemented as an oracle to support future performance metrics beyond unique wallets with data contributions
 
 ### Smart Contract Updates
-- Accepts authorized performance score uploads
+- Accepts authorized performance rating uploads
 - Implements configurable weight parameters
 
 ## Rationale
