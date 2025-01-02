@@ -33,7 +33,7 @@ Design Decisions
 - Separation of staker and treasury reward calculations allows for independent optimization of each
 - Implementation supports future parameter adjustments based on network evolution and governance
 
-## Security, Privacy and Economic Considerations
+## Security and Privacy Considerations
 
 - Large DLPs could still accumulate significant stake by staking their treasury rewards on themselves. However, this risk exists in the current system and is not exacerbated by the polynomial distribution.
 - The quadratic formula makes economic attacks more expensive as rewards scale sub-linearly with stake.
