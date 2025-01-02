@@ -1,1 +1,1 @@
-# Vana Improvement Proposals (VIPs)
+# Vana Request for Comments (VRCs)
