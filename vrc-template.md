@@ -1,6 +1,6 @@
 | VRC | Title | Status | Type | Author | Created |
 |-----|--------|--------|------|---------|----------|
-| <VRC number> | <VRC title> | <Draft | Proposed | Rejected | Withdrawn | Final> | <Technical | Process> | <author name and email> | <yyyy-mm-dd> |
+| VRC Number | Title of VRC | Status | Type  | Author name and email | yyyy-mm-dd |
 
 # Abstract
 
