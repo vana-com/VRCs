@@ -6,7 +6,7 @@ VRCs (Vana Request for Comments) are the primary mechanism for proposing new fea
 
 ## Contributing
 
-1. Review [VRC-1](vrcs/vrc-1.md) to understand the VRC process
+1. Review [VRC-1](VRCs/vrc-1.md) to understand the VRC process
 2. Fork this repository
 3. Create your VRC using the [template](vrc-template.md)
 4. Submit a pull request
