@@ -2,7 +2,7 @@
 
 | VRC | Title | Status | Type | Author | Created |
 |-----|--------|--------|------|---------|----------|
-| 1 | VRC Purpose and Guidelines | Active | Process | Anna Kazlauskas <annakaz@opendatalabs.xyz> | 2024-12-30 |
+| 1 | VRC Purpose and Guidelines | Final | Process | Anna Kazlauskas <annakaz@opendatalabs.xyz> | 2024-12-30 |
 
 ## What is a VRC?
 
@@ -23,37 +23,33 @@ There are two types of VRC:
 - Changes to data validation rules
 - Changes to the Data Liquidity Pool specifications 
 - Changes affecting how applications interact with Vana
-- Proposals for new standard data schemas
+- Changes to Data Liquidity Pool rewards
 
-**Process VRC** describes a process surrounding Vana or proposes a change to a process. This includes changes to the decision-making process, community guidelines, or the VRC process itself.
+**Process VRC** describes a process surrounding Vana or proposes a change to a process. This includes changes to the decision-making process, community guidelines, or VRC process itself.
 
-## VRC Workflow
+## VRC Work Flow
 
-The VRC process follows these steps:
-
-### Idea
-
-At the idea stage, parties involved in the proposal are you -- the VRC author, the Vana community and core contributors. Before you begin writing a formal VRC you should vet your idea. First conduct some research and ask the Vana community and core contributors if an idea is original to avoid wasting time on an idea that has a high chance of rejection. Ideas can be posed to discord to gather feedback before making your formal proposal.
+The VRC process follows these stages:
 
 ### Draft
 
-Write the VRC following the template format below and submit as a pull request by forking the repo.
+The author submits the initial VRC as a pull request by forking the repo. The VRC should follow the standard template format and include sufficient technical detail for implementation.
 
-### Review
+### Proposed
 
-During review, the author of the proposal is in charge of gathering and integrating feedback to build consensus on the proposal. The most relevant core contributors to the proposal should be included in the review process. Review will take place through Github so that all comments are collected and documented. Once consensus is met the proposal can either be accepted or withdrawn. This step will be taken when enough tradeoffs have been considered for the core contributors to make a decision. In this early stage, Vana Foundation and Open Data Labs are the only entities that can accept VRC proposals as core contributors. The current VRC process is being introduced to provide the Vana ecosystem with transparency and clarity on upcoming changes and will evolve over time.
+During this stage, the VRC undergoes formal review. The author is responsible for gathering and integrating feedback to build consensus. The most relevant core contributors should be included in the review process. Review takes place through Github so that all comments are collected and documented. In this early stage, Vana Foundation and Open Data Labs are the only entities that can accept VRC proposals as core contributors.
 
-### Accepted
+### Final
 
-Accepted proposals will be implemented by Vana core contributors as soon as circumstances warrant. While it is not required that the proposal author also write the implementation, it is an effective way to see a proposal through to completion: authors should not expect that other project developers will take on responsibility for implementing their accepted feature.
+The VRC has been accepted by core contributors and implemented. While it is not required that the proposal author write the implementation, it is an effective way to see a proposal through to completion: authors should not expect that other project developers will take on responsibility for implementing their accepted feature.
 
-### Implemented
+### Rejected
 
-When all relevant teams have completed development of the VRC's feature, the VRC is "Implemented". A proposal will have the status "Activated" once it has been implemented, tested, and finally activated on mainnet.
+The proposal has been rejected by core contributors after review. This state has finality, though the core ideas may be reworked into a new VRC.
 
 ### Withdrawn
 
-The author can withdraw the proposal prior to implementation. This state has finality and can no longer be brought back. If the idea is pursued at a later date it is considered a new VRC proposal.
+The author has withdrawn the proposal. This state has finality and cannot be reversed. If the idea is pursued at a later date it must be submitted as a new VRC.
 
 ## VRC Editors
 
