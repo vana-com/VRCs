@@ -16,29 +16,37 @@ The current DLP ranking system relies solely on staked VANA amounts, which may n
 
 ## Specification
 
-TODO: The technical specification should describe the proposed change in sufficient detail that implementation would be possible. 
+Scoring system: 
+Total Score = (Staking Score * 0.8) + (Performance Score * 0.2)
+
+Where:
+Staking Score = (DLP Staked Amount / Total Netowrk Staked Amount) * 100
+Performance Score = (DLP Unique Wallets With Verified Data This Epoch / Total Unique Wallets with Verified Data This Epoch) * 100
+
+Oracle Service
+- Tracks unique wallet contributions via subgraph queries
+- Updates scores every 30 minutes
+- Uploads final scores to blockchain
+- Implemented as an oracle to support future performance metrics beyond unique wallets with data contributions
+
+Smart Contract Updates
+- Accepts authorized performance score uploads
+- Implements configurable weight parameters
 
 ## Rationale
 
-TODO: Explain why particular design decisions were made. Describe alternate approaches that were considered and why they were not chosen. Include:
-
-- Technical tradeoffs
-- Design rationale
-- Alternative solutions considered
-- Dependencies and assumptions
+Design Decisions
+- Off-chain calculation chosen for cost efficiency and flexibility
+- 30-minute updates balance data freshness with resource usage
+- Designed to support adding future metrics beyond unique wallets who contributed data
 
 ## Security & Privacy Considerations
 
-TODO: Analyze the security implications of this change:
-
-- Potential attack vectors
-- Trust assumptions
-- Privacy implications
-- Risk mitigation strategies
+This change encourages many unique wallets to contribute data to DLPs, which is generally aligned with having many users contributing data. However one wallet does not always mean one user, and so it is important that DLPs also have a strong proof of contribution implementation, verifying that the data is legitimate. 
 
 ## Implementation
 
-TODO: Timeline estimates 
+Rolling out in Epoch 2
 
 ## Copyright
 
