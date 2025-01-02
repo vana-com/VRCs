@@ -2,11 +2,11 @@
 
 | VRC   | Title                   | Status | Type      | Authors              | Created    |
 |-------|-------------------------|--------|-----------|----------------------|------------|
-| VRC-2 | DLP Performance Metrics | Draft  | Technical | anna, kahtaf, eduard | 2025-01-01 |
+| VRC-2 | DLP Performance Metrics | Draft  | Technical | @annakaz, @kahtaf, @dumedco | 2025-01-01 |
 
 ## Abstract
 
-This VRC proposes introducing unique wallet contributions with verified data as a performance metric for DLP rankings and rewards. The proposal introduces a rating system that accounts for 20% of a DLP's total rating while maintaining the existing staking metric at 80%. This change aims to incentivize broader participation and higher-quality data contributions within DLPs.
+This VRC proposes enhancing DLP rankings by combining existing staking metrics with performance metrics based on verified data contributions. The initial proposed split allocates 80% of a DLP's rating to their staked VANA amount and 20% to their unique wallet contributions with verified data. By incorporating contribution metrics alongside staking, the system incentivizes DLPs to both maintain strong financial commitment and cultivate an active, diverse contributor base. This change aims to strengthen network participation while preserving the economic security provided by staking requirements.
 
 ## Motivation
 
@@ -40,7 +40,7 @@ Performance Rating = (DLP Unique Wallets With Verified Data This Epoch / Total U
 ## Rationale
 
 ### Design Decisions
-- Off-chain calculation chosen for cost efficiency and flexibility
+- Off-chain calculation chosen for efficiency and flexibility
 - 30-minute updates balance data freshness with resource usage
 - Designed to support adding future metrics beyond unique wallets with verified data contributions
 
