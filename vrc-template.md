@@ -2,19 +2,19 @@
 |-----|--------|--------|------|---------|----------|
 | VRC Number | Title of VRC | Status | Type  | Author name and email | yyyy-mm-dd |
 
-# Abstract
+## Abstract
 
 A brief technical summary of the proposal (200 words or less).
 
-# Motivation
+## Motivation
 
 Explain why this VRC is needed and what problem it solves. What are the use cases? What is the expected outcome?
 
-# Specification
+## Specification
 
 The technical specification should describe the proposed change in sufficient detail that implementation would be possible. 
 
-# Rationale
+## Rationale
 
 Explain why particular design decisions were made. Describe alternate approaches that were considered and why they were not chosen. Include:
 
@@ -23,7 +23,7 @@ Explain why particular design decisions were made. Describe alternate approaches
 - Alternative solutions considered
 - Dependencies and assumptions
 
-# Security & Privacy Considerations
+## Security & Privacy Considerations
 
 Analyze the security implications of this change:
 
@@ -32,7 +32,7 @@ Analyze the security implications of this change:
 - Privacy implications
 - Risk mitigation strategies
 
-# Implementation
+## Implementation
 
 Outline the implementation path:
 
@@ -41,13 +41,13 @@ Outline the implementation path:
 - Timeline estimates 
 - Testing requirements
 
-# Copyright
+## Copyright
 
 Copyright and related rights waived via CC0.
 
 ---
 
-# VRC Status Terms
+## VRC Status Terms
 
 - **Draft** - A VRC that has been formally written and submitted as a pull request
 - **Proposed** - A VRC that is under formal review by core contributors
@@ -55,7 +55,7 @@ Copyright and related rights waived via CC0.
 - **Withdrawn** - A VRC that has been withdrawn by the author(s)
 - **Final** - A VRC that has been accepted and implemented
 
-# VRC Type Terms
+## VRC Type Terms
 
 - **Technical** - A VRC that proposes changes to Vana protocol specifications or implementations
 - **Process** - A VRC that proposes changes to Vana processes or procedures
