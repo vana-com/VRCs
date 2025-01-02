@@ -25,7 +25,7 @@ There are two types of VRC:
 - Changes affecting how applications interact with Vana
 - Changes to Data Liquidity Pool rewards
 
-**Process VRC** describes a process surrounding Vana or proposes a change to a process. This includes changes to the decision-making process, community guidelines, or VRC process itself.
+**Process VRC** describes a process surrounding Vana or proposes a change to a process. This includes changes to the decision-making process, community guidelines, or the VRC process itself.
 
 ## VRC Work Flow
 
@@ -56,10 +56,10 @@ The author has withdrawn the proposal. This state has finality and cannot be rev
 VRC Editors are Vana Core Contributors who can accept and reject VRC proposals. This list will be expanded outside Open Data Labs and the Vana Foundation over time. Current VRC editors are:
 
 - @anskaz
-- @dumedco  
+- @artvana
 - @kahtaf
 - @tnunamak
 - @volod-vana
+- @dumedco  
 - @letonchanh
 - @cactapode
-- @artvana
