@@ -57,13 +57,14 @@ The proof of contribution requirements ensure data integrity by establishing cle
 
 Phase 1: UI Implementation (Start of Epoch 2)
 - DataHub interface will display DLP launch readiness status
-- Upon the start of Epoch 2, a 7-day grace period begins. For DLPs who partially meet requirements with a data contributor UI, no warning indicator is shown. For DLPs who do not yet have a data contributor UI, warning indicators will appear immediately at the start of Epoch 2.
+- Upon the start of Epoch 2, a 7-day grace period begins. For DLPs who partially meet requirements with a website or data contributor UI, no warning indicator is shown. For DLPs who do not yet have a website or data contributor UI, warning indicators will appear immediately at the start of Epoch 2.
 - After the 7-day grace period, warning indicators will appear for DLPs not meeting full requirements
 
 Phase 2: Smart Contract Integration (During Epoch 2)
 To be implemented during Epoch 2 and take effect for end-of-epoch rewards distribution:
 - Integration with rewards distribution mechanism
 - Status verification before reward eligibility
+- Once smart contracts are in effect, DLPs that do not meet the launch readiness standards will not be eligible for users to stake with them
 
 ## Copyright
 
