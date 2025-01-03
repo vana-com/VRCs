@@ -2,7 +2,7 @@
 
 | VRC   | Title                  | Status | Type      | Authors    | Created    |
 |-------|------------------------|--------|-----------|------------|------------|
-| VRC-4 | Sublinear DLP Rewards Distribution | Draft  | Technical | @annakaz, @tnunamak, @art-vana, @dumedco | 2025-01-02 |
+| VRC-4 | Sublinear DLP Rewards Distribution | Proposed  | Technical | @annakaz, @tnunamak, @art-vana, @dumedco | 2025-01-02 |
 
 ## Abstract
 
