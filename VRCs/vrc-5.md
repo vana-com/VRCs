@@ -2,7 +2,7 @@
 
 | VRC   | Title                            | Status | Type      | Authors              | Created    |
 |-------|----------------------------------|--------|-----------|---------------------|------------|
-| VRC-5 | DLP Launch Readiness Standards | Draft  | Technical | Anna, Colin, Anatoly  | 2025-01-02 |
+| VRC-5 | DLP Launch Readiness Standards | Proposed  | Technical | Anna, Colin, Anatoly  | 2025-01-02 |
 
 
 ## Abstract
