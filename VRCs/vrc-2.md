@@ -6,7 +6,7 @@
 
 ## Abstract
 
-This VRC proposes enhancing DLP rankings by combining existing staking metrics with performance metrics based on verified data contributions. The initial proposed split allocates 80% of a DLP's rating to their staked VANA amount and 20% to their unique wallet contributions with verified data. By incorporating contribution metrics alongside staking, the system incentivizes DLPs to both maintain strong financial commitment and cultivate an active, diverse contributor base. This change also incentivizes stakers to choose to stake with DLPs with better performance metrics. The change aims to strengthen network participation while preserving the economic security provided by staking requirements.
+This VRC proposes enhancing DLP rankings by combining existing staking metrics with performance metrics based on verified data contributions. The initial proposed split allocates 80% of a DLP's rating to their staked VANA amount and 20% to their unique wallet contributions with verified data, but this split is a configurable parameter which can be updated as more performance metrics are added. By incorporating contribution metrics alongside staking, the system incentivizes DLPs to both maintain strong financial commitment and cultivate an active, diverse contributor base. This change also incentivizes stakers to choose to stake with DLPs with better performance metrics. The change aims to strengthen network participation while preserving the economic security provided by staking requirements.
 
 ## Motivation
 
@@ -29,6 +29,8 @@ Performance Rating = (DLP Unique Wallets With Verified Data This Epoch / Total U
 ```
 
 This rating system impacts the rewards that go to both stakers and DLPs. 
+
+Note that the 80/20 split is a configurable parameter which can be updated as more performance metrics are added. 
 
 ### Oracle Service
 - Tracks unique wallet contributions via subgraph queries
