@@ -45,7 +45,7 @@ This rating system impacts the rewards that go to both stakers and DLPs.
 ### Design Decisions
 - Off-chain calculation chosen for efficiency and flexibility
 - 30-minute updates balance data freshness with resource usage
-- Designed to support adding future metrics beyond unique wallets with verified data contributions
+- Designed to support adding future metrics beyond unique wallets with verified data contributions. Future metrics could include: demand for data, measurements of data quality, and other metrics capturing the importance and quality of the DLP's dataset. 
 
 ## Security & Privacy Considerations
 
