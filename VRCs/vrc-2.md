@@ -45,11 +45,11 @@ This rating system impacts the rewards that go to both stakers and DLPs.
 ### Design Decisions
 - Off-chain calculation chosen for efficiency and flexibility
 - 30-minute updates balance data freshness with resource usage
-- Designed to support adding future metrics beyond unique wallets with verified data contributions. Future metrics could include: demand for data, measurements of data quality, and other metrics capturing the importance and quality of the DLP's dataset. 
+- Designed to support adding future metrics beyond unique wallets with verified data contributions. Future metrics could include: demand for data, measurements of data quality, and other metrics capturing the importance and quality of the DLP's dataset.
 
 ## Security & Privacy Considerations
 
-This change encourages many unique wallets to contribute data to DLPs, which is generally aligned with having many users contributing data. However, one wallet does not always mean one user, so it is important that DLPs also have a strong proof of contribution implementation, verifying that the data is legitimate.
+This change encourages many unique wallets to contribute data to DLPs, which is generally aligned with having many users contributing data. However, one wallet does not always mean one user, so it is important that DLPs also have a strong proof of contribution implementation, verifying that the data is legitimate. Implementing this change alongside VRC-5, which ensures DLPs provide accurate documentation on their roboust proof of contribution, helps to mitigate this risk. 
 
 ## Implementation
 
