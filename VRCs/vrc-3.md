@@ -2,7 +2,7 @@
 
 | VRC   | Title                  | Status | Type      | Authors    | Created    |
 |-------|------------------------|--------|-----------|------------|------------|
-| VRC-3 | Variable Staking Split | Proposed  | Technical | Anna, Art  | 2025-01-01 |
+| VRC-3 | Variable Staking Split | Final  | Technical | Anna, Art  | 2025-01-01 |
 
 ## Abstract
 
