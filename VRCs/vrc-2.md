@@ -55,6 +55,8 @@ This change encourages many unique wallets to contribute data to DLPs, which is 
 
 Rolling out in Epoch 2.
 
+The DataHub UI will also be updated to show each DLP's unique wallets with verified data contributions, providing stakers with information needed to make an informed decision. 
+
 ## Copyright
 
 Copyright and related rights waived via CC0.
