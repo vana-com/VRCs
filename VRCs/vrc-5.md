@@ -25,7 +25,7 @@ For a DLP to meet launch readiness standards, they must have:
 1. Data Infrastructure and Documentation
 - Minimum of 100 unique wallet data contributions onchain
 - Data schema documentation on the format of data collected
-- Documentation on proof of contribution requirements, or a link to the proof of contribution implementation if using the TEEs
+- Accurate documentation of the DLP's robust proof of contribution requirements, or a link to the proof of contribution implementation if using the TEEs
 
 2. User Access and Community Engagement
 - Data contributor UI for users to contribute data. This can be a website, chrome extension, CLI, or some other way for data contributors to contribute data. 
@@ -33,7 +33,7 @@ For a DLP to meet launch readiness standards, they must have:
 - Active social media presence with regular updates
 - Public communication channel (Twitter, Discord or Telegram)
 
-DLPs must actively maintain these requirements beyond initial registration.
+DLPs must actively maintain these launch readiness standards beyond initial registration. If a DLP no longer meets these standards, they would not be eligible for DLP rewards. 
 
 ## Rationale
 
@@ -41,17 +41,20 @@ These requirements ensure DLPs are launch ready while maintaining flexibility fo
 1. Data Infrastructure and Documentation
 - Provides a central hub for contributors and stakeholders
 - Maintains data schema documentation for data access requesters
-- Documents proof of contribution requirements for potential data access requesters
+- Documents proof of contribution requirements for potential data access requesters. This requirement is particularly important alongside VRC-2's DLP performance metrics, which include unique wallets with verified data contributions, as it provides transparency into how DLPs verify contributions.
+
 
 2. User Access and Community Engagement
 - Social media presence ensures timely updates and direct communication with contributors
-- The minimum of 100 data contributors demonstrates viability without excessive barriers, keeping in mind that some data sources may have a smaller number of data contributors with higher value individual data points. 
+- The minimum of 100 data contributors demonstrates viability without excessive barriers, keeping in mind that some data sources may have a smaller number of data contributors with higher value individual data points.
 
 ## Security & Privacy Considerations
 
 Public data schemas and proof of contribution documentation provide essential transparency while supporting network-wide interoperability. These benefits outweigh any potential risks from information disclosure about the DLP.
 
 The proof of contribution requirements ensure data integrity by establishing clear standards for verifying the quality and uniqueness of contributions from the minimum 100 data contributors.
+
+Accurate proof of contribution documentation is important alongside VRC-2 which introduces DLP performance metrics, the first of which is unique wallets with verified data contributions. DLPs must maintain robust proof of contribution implementations consistent with their documentation to remain eligible for rewards under these launch readiness standards.
 
 ## Implementation
 
@@ -63,7 +66,7 @@ Phase 1: UI Implementation (Start of Epoch 2)
 Phase 2: Smart Contract Integration (During Epoch 2)
 To be implemented during Epoch 2 and take effect for end-of-epoch rewards distribution:
 - Integration with rewards distribution mechanism
-- Status verification before reward eligibility
+- DLPs that do not meet launch readiness standards will not be eligible for rewards
 - Once smart contracts are in effect, DLPs that do not meet the launch readiness standards will not be eligible for users to stake with them
 
 ## Copyright
