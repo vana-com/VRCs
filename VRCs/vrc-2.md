@@ -2,7 +2,7 @@
 
 | VRC   | Title                   | Status | Type      | Authors              | Created    |
 |-------|-------------------------|--------|-----------|----------------------|------------|
-| VRC-2 | DLP Performance Metrics | Proposed  | Technical | @annakaz, @kahtaf, @dumedco | 2025-01-01 |
+| VRC-2 | DLP Performance Metrics | Final  | Technical | @annakaz, @kahtaf, @dumedco | 2025-01-01 |
 
 ## Abstract
 
