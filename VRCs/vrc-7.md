@@ -37,7 +37,6 @@ The proposal modifies reward distribution mechanics:
    - Continue to be restricted to top-ranked DLPs
    - No changes to treasury reward calculation
    - Maintains compatibility with VRC-4 sublinear distribution
-```
 
 ## Rationale
 
