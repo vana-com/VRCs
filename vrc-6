@@ -1,0 +1,102 @@
+| VRC | Title | Status | Type | Author | Created |
+|-----|--------|--------|------|---------|----------|
+| VRC 6 | Baseline Rewards for Top 16 DLPs | Status | Type  | Author Ryan Kuhel and ryan@dlp-labs.com | 2025-01-07 |
+
+## Abstract
+
+This VRC proposes establishing a baseline staking reward of 10,000 $VANA for the top 16 Data Liquidity Pools (DLPs). The objective is to incentivize emerging DLPs to participate in the ecosystem, promote equitable $VANA distribution, and mitigate risks associated with reward manipulation by large stakeholders. The implementation of this proposal will strengthen ecosystem integrity and incentivize meaningful contributions.
+  
+## Motivation
+
+The Vana ecosystem thrives on active participation and fair distribution of resources. However, the current staking model presents challenges:
+
+Large stakeholders ("whales") can capture the majority of DLP rewards without  
+
+Emergent DLPs face barriers to ecosystem participation, reducing overall diversity and innovation.
+
+Stakers may create fake DLPs to capture staking rewards, undermining genuine ecosystem builders.
+
+This proposal ensures baseline rewards for the top 16 DLPs, encouraging sustainable growth, fair distribution, and alignment with ecosystem goals.
+
+
+## Specification
+
+Proposed Changes
+
+Establish a fixed baseline reward of 10,000 $VANA per DLP for the top 16 ranked DLPs.
+
+Rank determination based on DLP activity, contribution, and compliance with ecosystem standards.
+
+Implement safeguards to prevent reward abuse, such as:
+
+Verification processes to identify genuine DLPs.
+
+Mechanisms to prevent manipulation of staking metrics.
+
+Ensure rewards are distributed monthly, aligning with existing $VANA tokenomics.
+
+  ## Rationale
+
+    Baseline Reward: Ensures emerging DLPs are incentivized to participate, fostering ecosystem growth.
+
+    Top 16 DLPs: Strikes a balance between inclusivity and practicality, focusing rewards on significant contributors.
+
+    Fixed Reward Amount: Simplifies reward calculations, ensuring predictable incentives.
+
+    Alternatives Considered
+
+      Pure Staking Rewards Percentage: Rejected due to lack of incentive for emerging DLPS potential for manipulation.
+
+      Reward Allocation to All DLPs: Deemed inefficient, as it dilutes incentives for genuine contributors.
+
+    Dependencies and Assumptions
+
+      Vana will attract and retain high quality projects with a more robust baseline reward mechanism 
+
+      Top performing DLPs can still be incentivized with baseline rewards for emerging DLPs 
+
+
+## Security & Privacy Considerations
+
+Potential Risks
+
+  Fake DLP Creation: Mitigated through verification processes.
+
+  Whale Manipulation: Addressed by limiting rewards to the top 16 DLPs and requiring compliance with contribution standards.
+
+  Data Privacy Concerns: Ensures that DLP ranking mechanisms do not expose sensitive data.
+
+Risk Mitigation Strategies
+
+  Regular audits of DLP ranking and reward distribution processes.
+
+  Encourage staking v. fake DLP creation 
+
+  Transparent communication with stakeholders.
+
+
+
+## Implementation
+
+Required Changes
+
+  Update reward distribution mechanisms to incorporate baseline rewards.
+
+Migration Strategy
+
+  Update rewards for epoch 2 
+
+Timeline Estimates
+
+  Pilot Program Epoch 2 
+
+Testing Requirements
+
+  Simulate reward distribution under various scenarios.
+
+  Validate ranking and verification mechanisms for accuracy and robustness.
+
+
+## Copyright
+
+Copyright and related rights waived via CC0.
