@@ -1,103 +1,94 @@
 | VRC | Title | Status | Type | Author | Created |
 |-----|--------|--------|------|---------|----------|
-| VRC 6 | Baseline Rewards for Top 16 DLPs | Status | Type  | Author Ryan Kuhel and ryan@dlp-labs.com | 2025-01-07 |
+| VRC 6 | Autostaking of $VANA | Status | Type  | Author Ryan Kuhel and ryan@dlp-labs.com | 2025-01-13 |
 
 ## Abstract
 
-This VRC proposes establishing a baseline staking reward of 10,000 $VANA for the top 16 Data Liquidity Pools (DLPs). The objective is to incentivize emerging DLPs to participate in the ecosystem, promote equitable $VANA distribution, and mitigate risks associated with reward concentration by large stakeholders. The implementation of this proposal will strengthen ecosystem integrity and incentivize meaningful contributions.
+This VRC proposes enabling auto-staking of $VANA rewards within the Vana Hub to improve user experience for DLP creators and stakers. The current manual claiming and restaking process is time-consuming and creates multiple rows of staked $VANA, adding unnecessary complexity. Auto-staking would streamline the process by automatically reinvesting rewards while offering a bonus incentive to users, enhancing the protocol's attractiveness and usability.
   
 ## Motivation
 
-The Vana ecosystem thrives on active participation and fair distribution of resources. However, the current staking model presents challenges:
+Currently, $VANA rewards are issued to stakers and DLP creators, who must claim these rewards manually and restake them to compound their holdings. 
 
-Emergent DLPs are not incentivized meaningfully for achieving a top 16 position. 
+This process has several drawbacks:
+# Cumbersome User Experience: Users must frequently interact with the platform, leading to frustration and inefficiency.
+# Fragmented Stakes: Manual restaking results in multiple rows of staked $VANA, complicating tracking and management.
+# Lost Growth Opportunities: The effort required may discourage some users from maximizing their returns through regular restaking.
 
-Emergent DLPs face barriers to ecosystem participation, as $VANA is required to earn DLP rewards, reducing overall diversity and innovation.
-
-Stakers may create fake DLPs to capture staking rewards, undermining genuine ecosystem builders.
-
-Full concentration of DLP rewards to top two or three DLPs is not healthy for the ecosystem 
-
-This proposal ensures baseline rewards for the top 16 DLPs, encouraging sustainable growth, fair distribution, and alignment with ecosystem goals.
+By introducing auto-staking, users can automatically reinvest their rewards with minimal effort, creating a seamless "set it and forget it" experience. A small bonus for using auto-staking will encourage adoption and reward user loyalty.
 
 
 ## Specification
 
 Proposed Changes
 
-Establish a fixed baseline reward of 10,000 $VANA per DLP for the top 16 ranked DLPs.
+Technical Implementation
 
-Rank determination based on DLP activity, contribution, and compliance with ecosystem standards.
+Auto-Staking Option:
+Introduce a toggle within the Vana Hub interface allowing users to enable auto-staking for their $VANA rewards.
+Once enabled, rewards are automatically staked upon distribution, compounding the user's stake without requiring manual intervention.
 
-Implement safeguards to prevent reward abuse, such as:
+Bonus Incentive:
+Offer a small percentage bonus on auto-staked rewards (e.g., 1–2%) to encourage adoption.
+The bonus will be funded through the existing reward pool.
 
-Verification processes to identify genuine DLPs.
+Smart Contract Changes:
 
-Mechanisms to prevent manipulation of staking metrics.
+Modify the staking smart contract to include an auto-staking function that:
+Automatically reinvests rewards upon issuance.
+Tracks compounded rewards and bonuses.
 
-Ensure rewards are distributed monthly, aligning with existing $VANA tokenomics.
+Ensure compatibility with existing staking mechanics to prevent disruptions.
+
+User Interface Updates:
+Add an intuitive auto-staking toggle in the Vana Hub.
+Display auto-staked balances and cumulative bonuses to provide transparency.
+
 
   ## Rationale
-
-    Baseline Reward: Ensures emerging DLPs are incentivized to participate, fostering ecosystem growth.
-
-    Top 16 DLPs: Strikes a balance between inclusivity and practicality, focusing rewards on significant contributors.
-
-    Fixed Reward Amount: Simplifies reward calculations, ensuring predictable incentives.
-
-    Alternatives Considered
-
-      Pure Staking Rewards Percentage: Rejected due to lack of incentive for emerging DLPS potential for manipulation.
-
-      Reward Allocation to All DLPs: Deemed inefficient, as it dilutes incentives for genuine contributors.
-
-    Dependencies and Assumptions
-
-      Vana will attract and retain high quality projects with a more robust baseline reward mechanism 
-
-      Top performing DLPs can still be incentivized with baseline rewards for emerging DLPs 
-
-
-## Security & Privacy Considerations
-
-Potential Risks
-
-  Fake DLP Creation: Mitigated through verification processes.
-
-  Whale Manipulation: Addressed by limiting rewards to the top 16 DLPs and requiring compliance with contribution standards.
-
-  Data Privacy Concerns: Ensures that DLP ranking mechanisms do not expose sensitive data.
-
-Risk Mitigation Strategies
-
-  Regular audits of DLP ranking and reward distribution processes.
-
-  Encourage staking v. fake DLP creation 
-
-  Transparent communication with stakeholders.
-
+    Improved User Experience:
+      Simplifies staking by eliminating repetitive manual actions.
+      Consolidates staking into a single row, reducing clutter and confusion.
+    Incentivized Growth:
+      The bonus rewards mechanism aligns with Vana’s goal of fostering long-term participation and engagement.
+      Increased Protocol Stickiness:
+    Auto-staking encourages users to maintain and grow their holdings, boosting $VANA demand and reducing sell pressure.
+      Efficient Resource Allocation:
+      Streamlined processes reduce the need for frequent user interaction, decreasing gas fees and platform overhea
 
 
 ## Implementation
 
-Required Changes
+Implementation Path
+Design Phase:
+Collaborate with Vana core developers to define smart contract and interface requirements.
+Estimate bonus percentage and its impact on the reward pool.
+Development Phase:
+Implement smart contract changes for auto-staking functionality.
+Develop and test UI/UX updates in the Vana Hub.
+Testing Phase:
+Conduct extensive testing to ensure compatibility and security.
+Perform user acceptance testing with a small group of DLP creators and stakers.
+Deployment Phase:
+Deploy the updated smart contract and UI/UX changes to mainnet.
+Launch a community campaign to educate users about auto-staking and its benefits.
 
-  Update reward distribution mechanisms to incorporate baseline rewards.
+Impact Evaluation
+Metrics to Track:
+Adoption rate of auto-staking among users.
+Average staked $VANA balance growth.
+Increase in retention and engagement rates.
+Expected Outcomes:
+Higher staked $VANA totals.
+Improved user satisfaction and platform reputation.
+Long-term stabilization of $VANA tokenomics.
 
-Migration Strategy
+Open Questions
+What bonus percentage will sufficiently incentivize users without overburdening the reward pool?
+Should there be a lock-in period for auto-staking to qualify for bonuses, and if so, how long?
 
-  Update rewards for epoch 2 
-
-Timeline Estimates
-
-  Pilot Program Epoch 2 
-
-Testing Requirements
-
-  Simulate reward distribution under various scenarios.
-
-  Validate ranking and verification mechanisms for accuracy and robustness.
-
+Conclusion
+Auto-staking of $VANA rewards with a bonus incentive will significantly enhance user experience, promote long-term engagement, and simplify staking mechanics for DLP creators and stakers. By implementing this feature, Vana reinforces its commitment to innovation and user-centric design.
 
 ## Copyright
 
