@@ -155,11 +155,7 @@ Phase 4: Iteration
 Adopting a points-based reward system will ensure a fairer, more resilient reward mechanism for DLPs in the Vana ecosystem. By incentivizing diverse contributions and decentralization, this approach guarantees long-term sustainability and equity while fostering innovation and competition.
 
 
-## Copyright
 
-Copyright and related rights waived via CC0.
-
----
 
 ## VRC Type Terms
 
