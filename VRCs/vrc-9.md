@@ -113,20 +113,31 @@ At this early stage of Vana’s ecosystem, preventing a concentration of power i
 ## Implementation
 
 Phase 1: Design and Testing
+
 	•	Prototype the points-based system.
+ 
 	•	Simulate the model with current Epoch’s criteria.
 
 Phase 2: Community Feedback
+
 	•	Gather input from DLP operators and stakeholders.
+ 
 	•	Refine metrics and weights, categories can be rolled out at each new Epoch.
+ 
 
 Phase 3: Rollout
+
 	•	Deploy the system on next Epoch. 
+ 
 	•	Monitor and evaluate performance for one quarter.
+ 
 
 Phase 4: Iteration
+
 	•	Launch on the mainnet with governance approval.
+ 
 	•	Continuously refine based on feedback.
+ 
 
 **Impact Evaluation**
 
