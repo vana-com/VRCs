@@ -1,41 +1,74 @@
 | VRC | Title | Status | Type | Author | Created |
 |-----|--------|--------|------|---------|----------|
-| 8 | Time-Weight Rewards | Draft | Technical  | Dylan H - contact@vanatensor.io | 2025-01-07 |
+| 8 | Time-Weight Rewards | Final | Technical  | Dylan H - contact@vanatensor.io, Anatoly S - anatoly@opendatalabs.xyz | 2025-01-17 |
 
 ## Abstract
 
-Time-weighted rewards means that Vana would be distributed based on continuous performance of DLPs and stakers, rather than based on a single snapshot at the end of each epoch.
-It can be achieved by once a day logging current scores for stakers and DLPs, and accumulating them over the 21 day epoch, and finally distribute the rewards at the end of the tokens.
+Time-weighted rewards ensure that Vana tokens are distributed fairly to both DLP creators and stakers. 
+
+For stakers, rewards are adjusted only for stakes lasting fewer than 21 days. For DLPs, the total staked metric in the scoring formula is also adjusted for stakes under 21 days. 
+
+This approach mitigates exploitative behavior, promotes consistent participation, and rewards continuous contributions.
 
 ## Motivation
 
-Currently there is minimal incentive for investors to stake until the end of an epoch, and investors can buy tokens the day before the epoch end, and then unstake the day after and sell with about a 10% increase in tokens.
-This causes massive volatility and instability in the ecosystem, making it hard for participants to plan ahead. Metrics such as APY and estimated DLP rewards currently can be highly misleading since at the last second of an epoch, someone can add massive stake to a DLP and drastically change the rewards for people that may have been staked for weeks.
-Further, having time-weighted rewards incentivizes DLPs to consistently perform well, rather than being incentivized to do massive campaigns at the end of each epoch, in order to win stake.
-Lastly, time-weighted rewards are the standard for all major protocols with staking, and adopting this best practice will likely raise fewer questions and decrease confusion amongst users than the current system
+The current system allows exploitative behaviors, such as staking large amounts near the end of an epoch to maximize rewards, leading to:
+
+1. Ecosystem volatility and instability.
+2. Misleading metrics such as APY and estimated DLP rewards, which can change drastically due to last-minute staking.
+3. Incentives for short-term campaigns rather than sustained performance throughout an epoch.
+
+While the system includes a 7-day unlock period, which requires participants to stake for at least 7 days to exploit rewards, instability persists due to the lack of proportional rewards. Adopting time-weighted rewards addresses these issues by ensuring rewards are distributed in proportion to contributions over time, aligning with industry standards and increasing system predictability.
 
 ## Specification
 
-We suggest that stakers and DLPs accrue rewards daily, based on a snapchat of that specific day.
-Since 400000 Vana are distributed per epoch, about 19048 Vana would be rewarded, but not claimable, each day.
-On the final day of the epoch, a final snapshot is made, and the rewards are paid to DLPs, and stakers can get their rewards gradually unlocked.
+Time-weighted rewards are implemented via changes to the existing multiplier logic:
+
+1. **Staker Rewards:**
+    - For stakes with fewer than 21 days, the multiplier is calculated as:
+      **(X blocks staked) / (21 * blocks per day)**
+    - After 21 days, the previous multiplier formula applies:
+      - Day 42: Multiplier = 1.5x
+      - Day 63: Multiplier = 2.75x
+      - Day 84: Multiplier = 3x
+    - Example:
+      - Day 1: Multiplier = (1/21)x
+      - Day 10: Multiplier = (10/21)x
+      - Day 21: Multiplier = 1x 
+
+2. **DLP Rewards:**
+    - Total staked in the DLP Scoring is still measured as the sum of stakers’ stakes at the last epoch block.
+    - However, if a staker has staked for fewer than 21 days, their stake is adjusted with the new multiplier
+    - Example:
+      If a staker adds 1M VANA at the last block of an epoch, the effective contribution to the DLP’s score is: **(1M * blocks staked) / (21 * blocks per day)**
+
+This ensures that last-minute staking has minimal impact on DLP rewards and incentivizes consistent performance throughout the epoch.
 
 ## Rationale
 
-- Daily Time-Weighted Rewards
-Calculating rewards once a day means rewards are in practice mostly continuous from participants perspective, while minimizing load on the chain compared to more frequent reward calculations.
-- Continuous Accruing
-Continuously accruing rewards, even if inaccessible until epoch end, leads to a simpler calculation on the final day, than storing 21 non-accured snapshots and averaging.
+- **Adjustments for Stakers and DLPs:** Rewards are adjusted for stakes lasting fewer than 21 days, ensuring fairness and discouraging exploitative behaviors.
+- **Exploit Mitigation:** Time-weighting reduces the impact of short-term staking, promoting consistent contributions over time.
+- **Aligned with Standards:** This approach follows best practices in staking protocols, increasing user trust and transparency.
 
 ## Security & Privacy Considerations
 
-Time-Weighted Rewards decreases the incentives for, and effects of exploitative reward tactic. In the current system a DLP or staker could right before an epoch end use a potential exploit, and get highly rewarded for it. If rewards were time weighted, their rewards would only be one 21th as high, assuming the exploit can be addressed within one day.
-Privacy is unaffected.
+- **Security:** Time-weighted rewards reduce the economic incentives for last-minute staking and the effects of potential exploits. Exploits affecting rewards over a short period have diminished impact due to proportional weighting.
+- **Privacy:** Unchanged from the current system.
 
 ## Implementation
 
-The functionality could likely be developed, tested and implemented well in time for epoch four.
-Time-weighted reward is the standard for protocols with rewards for participants, and thus documentation and other resources are well established.
+The changes are live starting Day 1 of Epoch 3. Adjustments include:
+
+1. **Multiplier Logic:**
+    - New time-weighting is applied to stakes only for durations under 21 days.
+    - Epoch 1 and Epoch 2 stakers retain multipliers based on the old formula.
+
+2. **DLP Scoring:**
+    - The total staked metric in the scoring system now time-weights individual stakes under 21 days.
+
+3. **APY Adjustments:**
+    - A new APY field reflects the adjusted APY for new stakers, starting at the current Epoch 2’s APY and gradually decreasing to zero by the epoch’s end.
+
 
 ## Copyright
 
