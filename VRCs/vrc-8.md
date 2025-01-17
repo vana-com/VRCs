@@ -15,8 +15,7 @@ This approach mitigates exploitative behavior, promotes consistent participation
 The current system allows exploitative behaviors, such as staking large amounts near the end of an epoch to maximize rewards, leading to:
 
 1. Ecosystem volatility and instability.
-2. Misleading metrics such as APY and estimated DLP rewards, which can change drastically due to last-minute staking.
-3. Incentives for short-term campaigns rather than sustained performance throughout an epoch.
+2. Incentives for short-term campaigns rather than sustained performance throughout an epoch.
 
 While the system includes a 7-day unlock period, which requires participants to stake for at least 7 days to exploit rewards, instability persists due to the lack of proportional rewards. Adopting time-weighted rewards addresses these issues by ensuring rewards are distributed in proportion to contributions over time, aligning with industry standards and increasing system predictability.
 
@@ -65,10 +64,6 @@ The changes are live starting Day 1 of Epoch 3. Adjustments include:
 
 2. **DLP Scoring:**
     - The total staked metric in the scoring system now time-weights individual stakes under 21 days.
-
-3. **APY Adjustments:**
-    - A new APY field reflects the adjusted APY for new stakers, starting at the current Epoch 2’s APY and gradually decreasing to zero by the epoch’s end.
-
 
 ## Copyright
 
