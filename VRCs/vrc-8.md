@@ -16,6 +16,7 @@ The current system allows exploitative behaviors, such as staking large amounts 
 
 1. Ecosystem volatility and instability.
 2. Incentives for short-term campaigns rather than sustained performance throughout an epoch.
+3. In order to further promote long-term alignment, the staking duration required to achieve the maximum multiplier is extended by an additional epoch.
 
 While the system includes a 7-day unlock period, which requires participants to stake for at least 7 days to exploit rewards, instability persists due to the lack of proportional rewards. Adopting time-weighted rewards addresses these issues by ensuring rewards are distributed in proportion to contributions over time, aligning with industry standards and increasing system predictability.
 
