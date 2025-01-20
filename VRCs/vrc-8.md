@@ -26,7 +26,7 @@ Time-weighted rewards are implemented via changes to the existing multiplier log
 
 1. **Staker Rewards:**
     - For stakes with fewer than 21 days, the multiplier is calculated as:
-      **(X blocks staked) / (21 * blocks per day)**
+      **(X days staked) / 21**
     - After 21 days, the previous multiplier formula applies:
       - Day 42: Multiplier = 1.5x
       - Day 63: Multiplier = 2.75x
@@ -40,7 +40,7 @@ Time-weighted rewards are implemented via changes to the existing multiplier log
     - Total staked in the DLP Scoring is still measured as the sum of stakers’ stakes at the last epoch block.
     - However, if a staker has staked for fewer than 21 days, their stake is adjusted with the new multiplier
     - Example:
-      If a staker adds 1M VANA at the last block of an epoch, the effective contribution to the DLP’s score is: **(1M * blocks staked) / (21 * blocks per day)**
+      If a staker adds 1M VANA at the last days, the effective contribution to the DLP’s score is: **1M / 21 days**
 
 This ensures that last-minute staking has minimal impact on DLP rewards and incentivizes consistent performance throughout the epoch.
 
