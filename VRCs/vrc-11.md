@@ -1,69 +1,58 @@
 | VRC | Title | Status | Type | Author | Created |
 |-----|--------|--------|------|---------|----------|
-| VRC-10 | DLP Verification and Ecosystem Integrity Standards | Proposed | Technical | Art A, Anna K | 2025-01-21 |
+| VRC-11 | DLP Rewards Evolution | Proposed | Technical | Art A, Colin, Anna | 2025-01-21 |
 
 ## Abstract
-This VRC aims to ensure DLP rewards are incentivizing high quality data coming into the ecosystem. It proposes giving the Vana Foundation the ability to de-verify Data Liquidity Pools (DLPs) that engage in behavior undermining the ecosystem, such as bot usage, Sybil attacks, or other malicious practices. These DLPs can still maintain registration on the network, but will not be eligible for DLP rewards. To maintain the integrity of data contributions, the Vana Foundation will also conduct Regular Monitoring and Data Audits, a systematic process to verify the quality and authenticity of data submitted by DLPs.
+After two successful epochs of the DLP Rewards Program, the Vana network has reached an exciting milestone of growth and evolution. With 25k+ stakers, 3.1M verified data points, and the organic launch of numerous DataDAOs, these early epochs have been a learning phase, providing invaluable insights into the dynamics of stakers, builders, and rewards.
 
-This policy ensures that the Vana Foundation upholds the highest standards of data quality, protecting the interests of all DLPs and the broader ecosystem while offering support to help DLPs address identified issues and return to compliance.
+Feedback from the market and the DataDAO builder community revealed some challenges that need to be addressed swiftly. The current system has inadvertently incentivized low-quality, high-volume data that creates minimal value and allowed some participants to exploit reward structures in ways that are misaligned with the ecosystem's goals. To address this, we propose interim adjustments in the protocol that ensure rewards better reflect meaningful contributions while continuing to align with the broader roadmap toward an enhanced DLP rewards program.
+
+These adjustments will focus on maintaining fairness, enabling flexibility for stakers, and fostering value accrual to DataDAOs, their tokens, and the Vana ecosystem, alongside ensuring that rewards reflect the quality and commercial potential of data contributions.
 
 ## Motivation
-The strength of the Vana ecosystem depends on trust and transparency, especially as it scales to include diverse DLPs. Malicious behaviors like bot usage and Sybil attacks can compromise this trust, threatening both ecosystem fairness and the quality of data contributions.
-
-The introduction of Data Audits is an essential step in ensuring that the Vana ecosystem is a trusted environment for data collection, enabling it to attract and maintain high-value datasets. At the same time, the Vana Foundation recognizes the importance of working collaboratively with DLPs to help them resolve issues and improve their practices.
+The initial epochs of the DLP Rewards Program were intentionally designed to be a period of experimentation. Feedback from the community and builders has underscored several key areas for improvement:
+Promoting DataDAO Value: Current incentives have skewed toward low-value, high-volume data, which does not serve the network's long-term goals. Rewards must align with data quality and commercial potential while ensuring value accrues to DataDAOs and their tokens alongside VANA.
+Empowering Stakers: Stakers need the tools and flexibility to engage meaningfully with DataDAOs, evaluating them on their relevance and contributions rather than simply chasing yield.
+Supporting Ecosystem Alignment: The rewards structure must encourage DataDAOs to act as stewards of the ecosystem, aligning with collaborative principles and high standards of data integrity.
+These interim measures reflect a broader commitment to transitioning to a more sustainable, community-driven rewards structure under the enhanced DLP rewards program.
 
 ## Specification
-### De-Verification of DLPs
-The Vana Foundation will have the authority to de-verify any DLP engaging in:
-1. Bot Usage: Automated mechanisms designed to inflate metrics or manipulate contributions.
-2. Sybil Attacks: Fake accounts or identities used to exploit staking, rewards, or voting processes. 
-3. Other Malicious Practices: Fraudulent, deceptive, or harmful actions that undermine the ecosystem's integrity.
+Key Adjustments to the DLP Rewards Program
+1. Standardized APY for Stakers
+The same standard APY will apply across all DLPs, similar to Epoch 1, removing uneven incentives.
+UI Enhancements: The staking page will display randomized cards featuring logos, links, and 25-word pitch statements crafted by each DataDAO to highlight their value and purpose. APY and the number of stakers will not be displayed.
+Rationale: This approach educates stakers, encourages critical evaluation of DataDAOs, and fosters deeper engagement and long-term mindshare for the ecosystem.
 
-De-verification will result in the immediate removal of the DLP's eligibility for rewards and participation in the ecosystem. To the extent that misconduct results in inflated metrics, DLP rewards may be affected retroactively.
+2. Flexible Staking for Contributors
+The 7-day unstaking waiting period will be removed, enabling stakers to dynamically move their tokens between DataDAOs.
+Rewards will remain time-weighted, ensuring long-term staking is still incentivized.
+Rationale: By empowering stakers with flexibility, this change incentivizes DataDAOs to compete for community mindshare and rewards contributors for active engagement.
 
-### Right of Response and Support
-1. Notification: Affected DLP teams will be notified of the identified behavior and intent to de-verify.
-2. Response Window: Teams will have 24 hours to provide a response or evidence to dispute the allegations.
-3. Final Decision and Support: After reviewing the response, the Vana Foundation will make a final determination and communicate the outcome publicly.
+3. Revised Reward Structures for DataDAOs
+Rewards will now be determined 100% by stake, with 0% by unique contributors.
+Rationale: These changes address exploitative behavior, where participants create multiple low-quality DataDAOs to game rewards. By focusing on high-value, focused datasets, this adjustment supports long-term ecosystem growth.
 
-If de-verification is confirmed, the Vana Foundation will work with the affected DLP to help them address the identified issues and re-qualify for the program as quickly as possible. This may include:
-- Scrubbing and Cleaning Datasets: Assisting the DLP in identifying and filtering out the continued collection of bad data to improve data quality.
-- Refining Proof of Contribution: Providing guidance on implementing or improving proof of contribution mechanisms to ensure robust and transparent verification processes.
+4. Foundation Staking to Support Quality
+The Vana Foundation will stake VANA on behalf of DataDAOs to encourage high-quality contributions.
+Criteria for Foundation Staking:
+Commercial Value of Data: The monetization potential and structure of the dataset, as well as the DataDAO's willingness to participate in commercialization.
+Compliance with Standards: Alignment with ecosystem standards, including token architecture, data validation, and proof of contribution mechanisms.
+Collaborative Conduct: The DataDAO's cooperative behavior with other DLPs, the foundation, and the broader ecosystem.
+Rationale: The foundation's responsibility is to prioritize DLPs that align with the ecosystem's goals, ensuring scalability and long-term alignment.
 
-The goal is to provide a clear pathway for the DLP to return to compliance and continue contributing to the ecosystem.
-
-### Data Audits: Ensuring High-Quality Contributions
-To safeguard data quality, the Vana Foundation will conduct randomized Data Audits on DLPs. The audit process includes the following steps:
-1. Data Sampling: The Vana Foundation will randomly select a sample of data contributions (file IDs) for the DLP ID from the Vana Data Registry contract.
-2. Decryption Request: The DLP will be sent these file IDs and asked to send the associated decryption keys for those files back to the Vana Foundation.
-3. Data Examination: The Vana Foundation will examine the decrypted samples in a secure environment to assess their quality and authenticity.
-
-The Data Audit process is critical to ensuring the ecosystem consistently attracts high-quality data contributions while preserving fairness and transparency.
-
-### Monitoring Onchain Activity: Detecting Irregularities
-The Vana Foundation will conduct Monitoring of onchain activity to detect and address potential irregularities or misuse of the rewards mechanism. This includes:
-1. Transaction Monitoring: Analyzing onchain transaction data to identify patterns such as sudden spikes in unique contributor counts or unusual transaction volumes.
-2. Behavioral Analysis: Identifying anomalies or suspicious patterns that may indicate fraudulent activities, such as artificially inflating contributor numbers.
-3. Flagging Irregularities: Highlighting suspicious activity for further investigation and follow-up.
-
-Through consistent monitoring, the Foundation ensures the ecosystem remains fair, transparent, and resilient against exploitation.
-
-## Rationale
-The ability to enforce data quality standards through de-verification and audits is essential to maintaining trust and transparency in the Vana ecosystem. By holding DLPs to high standards, the Vana Foundation ensures:
-1. Ecosystem Integrity is Preserved: Malicious behavior is identified and addressed to protect the interests of all participants.
-2. Trust and Quality are Prioritized: Data Audits ensure the ecosystem attracts high-quality data, strengthening its value proposition.
-3. Fairness and Accountability: A transparent audit process reassures participants that the ecosystem is protected from exploitation.
-4. Path to Improvement: By supporting DLPs in scrubbing datasets and refining proof of contribution, the Foundation ensures teams can learn from missteps and re-engage productively with the ecosystem.
-
-## Security & Privacy Considerations
-All Data Audits will be conducted with strict adherence to privacy standards. Decrypted data contributions will only be examined as part of the audit process and will not be retained beyond its conclusion. Transparency protocols will ensure that the audit process is fair, consistent, and publicly communicated when necessary.
+5. Temporary Custody of Rewards to DLP Creators (Starting Epoch 2)
+Beginning Epoch 2, rewards allocated to DLP creators will be custodially managed by the Vana Foundation and staked within the network as directed by each respective DLP creator.
+Purpose: This measure ensures that rewards are used to support the creation of value for datasets and data tokens, fostering the development of a vibrant data marketplace.
+Rationale: Providing rewards solely in VANA has constrained the growth of a marketplace for data tokens, which is critical to the ecosystem's vision. Custodial management ensures that rewards are aligned with this broader goal while the roadmap below is implemented.
 
 ## Implementation
-Effective Immediately Upon Approval:
-1. The Vana Foundation will establish procedures for identifying malicious behaviors and conducting Data Audits.
-2. Affected teams will be notified and given 24 hours to respond before de-verification is finalized.
-3. Audit findings will guide de-verification decisions and ensure quality standards are upheld.
-4. If de-verification occurs, the Foundation will assist affected DLPs in scrubbing datasets, refining proof of contribution, and re-qualifying for DLP rewards.
+Effective for Epoch 2:
+Custodial Management: Rewards allocated to DLP creators will be managed by the Vana Foundation.
+Effective for Epoch 3:
+Standardized APY: Uniform APY across all DLPs, with improved UI to highlight DataDAO value propositions.
+Flexible Staking: Removal of the 7-day unstaking period.
+Revised Rewards: Rewards determined 100% by stake, with sublinear distribution removed.
+Foundation Staking: Empowered to support quality contributions, aligned with ecosystem goals.
 
 ## Copyright
 Copyright and related rights waived via CC0.
