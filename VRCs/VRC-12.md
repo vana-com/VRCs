@@ -1,6 +1,6 @@
 | VRC | Title | Status | Type | Author | Created |
 |-----|--------|--------|------|---------|----------|
-| VRC-12 | veVANA Staking & Flexible Staking Features | Draft | Technical | Chris R, Tim N | 2025-02-21 |
+| VRC-12 | veVANA Staking & Flexible Staking Features | Final | Technical | Chris R, Tim N | 2025-02-21 |
 
 ## Abstract
 
