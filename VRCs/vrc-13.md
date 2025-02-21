@@ -1,6 +1,6 @@
 | VRC | Title | Status | Type | Author | Created |
 |-----|--------|--------|------|---------|----------|
-| VRC-13 | Tokenomics Roadmap: DLP rewards and programmatic data access | Draft | Technical | Chris R, Tim N | 2025-02-21 |
+| VRC-13 | DLP Ecosystem Incentives and Programmatic Data Access | Draft | Technical | Chris R, Tim N | 2025-02-21 |
 
 # Abstract
 This document provides a high-level, preliminary overview of proposed changes to the Vana Data Liquidity Pool (DLP) ecosystem, intended to be rolled out over the coming months. These changes are designed to evolve Vana’s tokenomics, introduce staking and slashing mechanisms, and implement new performance metrics to incentivize participation of high-performing DLPs and high-quality data contributions to the Vana network.
