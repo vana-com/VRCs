@@ -6,7 +6,7 @@
 
 This VRC introduces **two major upgrades** to the DLP rewards system:
 
-1. **veVANA Staking** – DLP rewards will be distributed in **veVANA (vote-escrowed VANA)** instead of VANA tokens, starting in Epoch 5. This introduces and clarifies **programmatic staking lockups, voting power, and automatic restaking** to reward long-term commitment.
+1. **veVANA Staking** – DLP rewards will be distributed in veVANA (vote-escrowed VANA) instead of VANA tokens, but initially only for DLP creators in Epoch 5. Stakers will transition to veVANA staking in a later epoch. This upgrade clarifies **programmatic staking lockups** and **voting power** to reward long-term commitment.
 2. **Partial Unstaking** – Stakers will be able to **withdraw a portion of their stake** instead of being forced to remove the entire amount.
 
 These changes ensure **greater flexibility for stakers while maintaining strong incentives for long-term participation.**
@@ -17,18 +17,13 @@ The current staking model has **several limitations**:
 - **Rigid lockups** – Users must **unstake everything at once**, reducing flexibility.
 - **No governance power** – Staked tokens do not currently provide voting rights.
 
-By introducing **veVANA staking**, **partial unstaking**, and **stake mobility**, we give stakers **more control over their positions while maintaining incentives for long-term commitment.**
+By introducing **veVANA staking**, **partial unstaking**, we give stakers **more control over their positions while maintaining incentives for long-term commitment.**
 
 ## Specification
 
 ### 1. **veVANA Staking (Epoch 5 Onward)**
 - Users stake **$VANA → veVANA** (vote-escrowed VANA).
-- **What is veVANA?** A **locked version of VANA** that gives:
-  - **Voting power** in governance.
-  - **Boosted rewards** based on staking duration.
-  - **Automatic restaking** (unless withdrawn early).
-- **Lock-up period required** – The longer the stake duration, the higher the rewards.
-- **Early withdrawals have penalties** to discourage quick exits.
+- Only DLP creators will receive veVANA rewards initially.
 
 ### 2. **Partial Unstaking**
 - **Stakers can withdraw a portion of their stake** without removing the entire amount.
@@ -39,6 +34,16 @@ By introducing **veVANA staking**, **partial unstaking**, and **stake mobility**
 - **Why this matters:**  
   ✅ More flexibility for users who need liquidity.  
   ✅ Encourages long-term staking by **reducing all-or-nothing decisions**.
+
+### 3. **veVANA Token Implementation Details**
+
+- **ERC-20 Voting Token** – veVANA is a standard ERC-20 token that enables on-chain DAO governance.
+- **Transferrable** – veVANA can always be transferred between users.
+- **Not Upgradeable** – The veVANA contract is immutable.
+- **Minting & Burning Controlled by VeVanaVault:**
+  - **VeVanaVault** is an upgradeable contract responsible for minting and burning veVANA.
+  - **Currently, anyone** can convert VANA to veVANA and vice versa using VeVanaVault.
+  - **veVANA transfers** will always remain possible since the core token contract is immutable.
 
 ## Rationale
 
