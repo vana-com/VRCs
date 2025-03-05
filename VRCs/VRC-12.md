@@ -39,7 +39,7 @@ By introducing **veVANA staking**, **partial unstaking**, we give stakers **more
 
 - **ERC-20 Voting Token** – veVANA is a standard ERC-20 token that enables on-chain DAO governance.
 - **Transferrable** – veVANA can always be transferred between users.
-- **Not Upgradeable** – The veVANA contract is immutable.
+- **Upgradeable** – The veVANA contract is temporarily upgradable.
 - **Minting & Burning Controlled by VeVanaVault:**
   - **VeVanaVault** is an upgradeable contract responsible for minting and burning veVANA.
   - **Currently, anyone** can convert VANA to veVANA and vice versa using VeVanaVault.
