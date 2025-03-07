@@ -1,51 +1,34 @@
 | VRC | Title | Status | Type | Author | Created |
 |-----|--------|--------|------|---------|----------|
-| VRC-12 | veVANA Staking & Flexible Staking Features | Final | Technical | Chris R, Tim N | 2025-02-21 |
+| VRC-12 | Partial Unstaking | Final | Technical | Chris R, Tim N, Anatoly S | 2025-02-21 |
 
 ## Abstract
 
-This VRC introduces **two major upgrades** to the DLP rewards system:
+The current staking mechanism requires users to fully unstake their tokens if they wish to withdraw, leading to unnecessary rigidity.
 
-1. **veVANA Staking** – DLP rewards will be distributed in **veVANA (vote-escrowed VANA)** instead of VANA tokens, starting in Epoch 5. This introduces and clarifies **programmatic staking lockups, voting power, and automatic restaking** to reward long-term commitment.
-2. **Partial Unstaking** – Stakers will be able to **withdraw a portion of their stake** instead of being forced to remove the entire amount.
-
-These changes ensure **greater flexibility for stakers while maintaining strong incentives for long-term participation.**
+This VRC introduces **partial unstaking**, allowing stakers to withdraw a portion of their stake while keeping the rest staked. This improvement enhances **staking flexibility** without compromising long-term incentives.
 
 ## Motivation
 
-The current staking model has **several limitations**:
-- **Rigid lockups** – Users must **unstake everything at once**, reducing flexibility.
-- **No governance power** – Staked tokens do not currently provide voting rights.
+The existing staking model has a key limitation:
 
-By introducing **veVANA staking**, **partial unstaking**, and **stake mobility**, we give stakers **more control over their positions while maintaining incentives for long-term commitment.**
+- **Full unstaking requirement** – Users must remove their entire stake to access liquidity, reducing flexibility and discouraging long-term participation.
+
+Partial unstaking addresses this issue by enabling gradual withdrawals, ensuring that users retain both liquidity and staking benefits.
 
 ## Specification
 
-### 1. **veVANA Staking (Epoch 5 Onward)**
-- Users stake **$VANA → veVANA** (vote-escrowed VANA).
-- **What is veVANA?** A **locked version of VANA** that gives:
-  - **Voting power** in governance.
-  - **Boosted rewards** based on staking duration.
-  - **Automatic restaking** (unless withdrawn early).
-- **Lock-up period required** – The longer the stake duration, the higher the rewards.
-- **Early withdrawals have penalties** to discourage quick exits.
-
-### 2. **Partial Unstaking**
-- **Stakers can withdraw a portion of their stake** without removing the entire amount.
-- **How it works:**
-  - Users can **unstake X% of their veVANA** while keeping the rest staked.
-  - **Unstaked amounts follow the standard withdrawal penalty curve.**
-  - **Remaining veVANA retains its multiplier and continues earning rewards.**
-- **Why this matters:**  
-  ✅ More flexibility for users who need liquidity.  
-  ✅ Encourages long-term staking by **reducing all-or-nothing decisions**.
+- Stakers can withdraw a portion of their staked amount instead of the full balance.
+- How it works:
+  - Users specify the percentage of stake to withdraw.
+  - The remaining stake continues earning rewards.
+  - Withdrawn amount is sent to the user's wallet.
 
 ## Rationale
 
-These updates ensure:  
-✅ **Long-term staking rewards** – Encourages real commitment while allowing flexibility.  
-✅ **Better user experience** – Partial unstaking makes staking more attractive.  
-✅ **Stronger ecosystem alignment** – Fairer incentives for both stakers and DLPs.  
+- **Improved flexibility** – Users can access liquidity without unstaking their entire balance.
+- **Better staking incentives** – Long-term staking remains attractive as rewards continue on the remaining stake.
+- **Reduced friction** – No longer an all-or-nothing decision.
 
 ## Security & Privacy Considerations
 
@@ -54,11 +37,9 @@ These updates ensure:
 
 ## Implementation Plan
 
-- **Epoch 5**:  
-  - Switch from VANA rewards to veVANA staking.  
-  - Enable **partial unstaking**.  
-- **Epoch 6+**:  
-  - Refine staking logic based on ecosystem feedback.  
+Epoch 5:
+- Deploy partial unstaking functionality.
+- Monitor adoption and gather feedback for potential refinements.
 
 ## Copyright
 
