@@ -1,6 +1,6 @@
 | VRC | Title | Status | Type | Author | Created |  
 |-----|--------|--------|------|---------|----------|  
-| VRC-20 | DAT Token Standard | Draft | Technical | Tim, Francis, Anatoly, Anna | 2025-03-20 |
+| VRC-20 | DAT Token Standard | Final | Technical | Tim, Francis, Anatoly, Anna | 2025-03-20 |
 
 ## Abstract
 
@@ -45,7 +45,7 @@ This change lays out baseline standards that:
 
 4.1 If the token implements transfer fees or taxes, these must not exceed 3% per transaction.
 
-4.2 The token must not implement selective transfer restrictions that could be used to trap liquidity.
+4.2 The token must not implement selective transfer restrictions that could be used to trap liquidity. Security-oriented blacklists for identified malicious wallets are permitted provided they are implemented with appropriate governance controls.
 
 ### 5. Critical Function Protection
 
