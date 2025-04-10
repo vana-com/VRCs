@@ -24,6 +24,6 @@ VRCs go through the following statuses:
 ## Resources
 
 - [VRC Template](vrc-template.md)
-- [VRC Directory](vrcs/)
+- [VRC Directory](VRCs/)
 - [Vana Documentation](https://docs.vana.org/)
 - [Vana Whitepaper](https://docs.vana.org/docs/vana-whitepaper#/)
