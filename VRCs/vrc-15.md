@@ -59,7 +59,9 @@ Application builders can define arbitrary compute jobs, that once audited and ap
 
 ## Permissions and Payment Contracts
 
-The Query Engine contract handles fine-grained permissions and defining pricing for data access. It allows a DLP to grant access to specific schemas, tables and columns to a specific user for a pre-negotiated price. In the beginning, payment will be in $VANA but eventually will be in DLP-specific tokens. 
+The Query Engine contract handles fine-grained permissions and defining pricing for data access. It allows a DLP to grant access to specific schemas, tables and columns to a specific user for a pre-negotiated price. 
+
+Payments will be in $VANA. 20% of the data access fees will be distributed back to TEE stakers as yield and to TEE operators to cover operational costs. This ratio may be adjusted over time and may eventually involve a dynamic pricing mechanism. The remaining 80% will go to the DLP treasury in v0. Starting in v1, it'll be used to buy and burn DLP tokens. The 20% rate is deliberately set on the higher side initially, as it's preferable to start higher and reduce if needed, rather than starting too low and having to introduce unexpected increases later.
 
 The Job Registry contract manages secure compute jobs and allows application builders to pay for compute. Here, an application builder can point DLPs to the compute they want to run on a DLP’s data, and the DLP can approve or deny the request. This allows a DLP to grant access to a builder to train an AI model or run an operation on the DLP’s data without the builder ever having to see the underlying data.
 
@@ -85,12 +87,12 @@ The data access architecture prioritizes security and privacy through multiple s
 ## Implementation
 ### Phase 1 (First half of Epoch 6)
 - Query and Compute engine supporting basic SQL queries
-- Accept $VANA payment for data access only and a deterministic pricing model
+- Accept $VANA payment for data access only and a deterministic pricing model. 20% kept by the query engine treasury, 80% distributed back to the DLP treasury.
 - Permission layer for DLP owners to approve data access and sign off on compute tasks
 - Only new data from DLPs will be indexed by the Query Engine
 
 ### Phase 2 (Second half of Epoch 6)
-- Payment flow encompassing usage-based compute (paid in $VANA) and data access (paid in $VANA, or DLP tokens once ready)
+- Payment flow encompassing usage-based compute and data access. All paid in $VANA, 20% kept by query engine treasury, 80% used to buy and burn DLP tokens.
 - Migrate all DLP data collected before the refinement rollout, leveraging support from the ecosystem
 
 ### Requirements for DLPs
