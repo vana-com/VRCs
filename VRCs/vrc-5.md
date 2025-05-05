@@ -68,7 +68,8 @@ Compliance with all mandatory VRCs is crucial for maintaining network standardiz
 To be implemented during Epoch 2 and take effect for end-of-epoch rewards distribution:
 
 - DataHub interface will display DLP launch readiness status
-- DLPs that do not meet launch readiness standards and mandatory VRCs will not be eligible for rewards
+- DLPs that do not meet launch readiness standards will not be eligible for rewards
+- DLPs that do not comply with mandatory VRCs before Epoch 7 will not be eligible for rewards.
 
 ## Copyright
 
