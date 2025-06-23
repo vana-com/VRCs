@@ -48,9 +48,13 @@ This change lays out baseline standards that:
   - Direct distribution to data contributors based on proof of contribution
   - Tokens used exclusively for providing liquidity to decentralized exchanges
   - Community rewards distributed to independent third parties with no affiliation to the DLP team or investors
-  - Other data utility related functions
 
 3.3 For the avoidance of doubt, any allocation that provides direct or indirect economic benefit to the DLP team, founders, or investors must comply with vesting requirements regardless of how such allocation is labeled or categorized.
+
+3.4 Vesting Implementation Requirements: 
+- All vested allocations must be held in a verifiable onchain vesting contract or equivalent mechanism 
+- The publicly stated vesting schedule must reflect the actual vesting schedule
+- DLP operators must provide contract addresses and documentation demonstrating compliance with vesting requirements
 
 ### 4. Transfer Limitations
 
