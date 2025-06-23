@@ -37,9 +37,24 @@ This change lays out baseline standards that:
 
 2.2 The token must not implement automatic supply adjustments (rebasing) that could affect liquidity pool accounting.
 
-### 3. Team Allocation and Vesting
+### 3. Allocation Vesting Requirements
 
-3.1 Team, founder, and early contributor allocations must be subject to a vesting schedule of at least 6 months, followed by linear vesting for the remainder.
+3.1 The following allocations must be subject to a vesting schedule of at least 6 months, followed by linear vesting of at least 6 months for the remainder:
+  - Team, founder, and early contributor allocations
+  - Any allocation controlled by entities owned or controlled by the DLP team, founders, or investors
+  - Operational or administrative allocations that could be converted to team compensation
+
+3.2 Exemptions from vesting requirements apply only to:
+  - Direct distribution to data contributors based on proof of contribution
+  - Tokens used exclusively for providing liquidity to decentralized exchanges
+  - Community rewards distributed to independent third parties with no affiliation to the DLP team or investors
+
+3.3 For the avoidance of doubt, any allocation that provides direct or indirect economic benefit to the DLP team, founders, or investors must comply with vesting requirements regardless of how such allocation is labeled or categorized.
+
+3.4 Vesting Implementation Requirements: 
+- All vested allocations must be held in a verifiable onchain vesting contract or auditable mechanism 
+- The publicly stated vesting schedule must reflect the actual vesting schedule
+- DLP operators must publicly document contract addresses and evidence of compliance with vesting requirements
 
 ### 4. Transfer Limitations
 
