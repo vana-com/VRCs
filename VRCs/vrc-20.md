@@ -52,7 +52,7 @@ This change lays out baseline standards that:
 3.3 For the avoidance of doubt, any allocation that provides direct or indirect economic benefit to the DLP team, founders, or investors must comply with vesting requirements regardless of how such allocation is labeled or categorized.
 
 3.4 Vesting Implementation Requirements: 
-- All vested allocations must be held in a verifiable onchain vesting contract or equivalent mechanism 
+- All vested allocations must be held in a verifiable onchain vesting contract or auditable mechanism 
 - The publicly stated vesting schedule must reflect the actual vesting schedule
 - DLP operators must provide contract addresses and documentation demonstrating compliance with vesting requirements
 
