@@ -39,7 +39,7 @@ This change lays out baseline standards that:
 
 ### 3. Allocation Vesting Requirements
 
-3.1 The following allocations must be subject to a vesting schedule of at least 6 months, followed by linear vesting for the remainder:
+3.1 The following allocations must be subject to a vesting schedule of at least 6 months, followed by linear vesting of at least 6 months for the remainder:
   - Team, founder, and early contributor allocations
   - Any allocation controlled by entities owned or controlled by the DLP team, founders, or investors
   - Operational or administrative allocations that could be converted to team compensation
