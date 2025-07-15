@@ -89,6 +89,7 @@ Eliminating the "top 16" limitation and extending epochs to quarterly cycles pro
 ### Focus on Data Access Until $1B TDVL
 Until the ecosystem reaches $1B in Total Data Value Locked, only 50% of the rewards pool (the data access fees portion) is distributed, with rewards based solely on data access performance. This approach ensures that during the critical early growth phase, DLPs are incentivized to focus on building datasets that generate actual value through consumption. Once the ecosystem reaches sufficient scale at $1B TDVL, the full balanced scoring system activates and the complete rewards pool is distributed.
 
+The $1B threshold represents a maturity milestone where the ecosystem has demonstrated sufficient scale and liquidity to support a more complex reward structure. Before this point, concentrating rewards on data access fees creates the strongest incentive alignment for building valuable, consumable datasets rather than optimizing for metrics that may not translate to real utility.
 ## Security & Privacy Considerations
 
 ### Market Manipulation Risks
