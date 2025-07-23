@@ -14,6 +14,16 @@ Key changes include:
 
 This update establishes DLP tokens as first-class assets in the DataFi ecosystem, with market-driven price discovery that properly values data contributions while ensuring sufficient liquidity for both providers and consumers.
 
+## **Temporary Rewards Adjustment Until $1B TDVL**
+
+Based on key learnings from the initial implementation, a **temporary adjustment to the scoring system** is being introduced.
+
+**Until the ecosystem reaches $1B in Total Data Value Locked (TDVL), rewards will be distributed solely based on data access fees.** Token trading volume and unique data contributors will not be included in rewards calculation during this phase, and only 50% of the rewards pool will be distributed. Additional performance metrics which reward valuable data in the ecosystem may be introduced epoch by epoch. 
+
+## **Living Rewards Framework**
+
+Performance metrics and weightings may change epoch by epoch to respond to ecosystem priorities. All changes will be transparently communicated.
+
 ## Motivation
 
 The current DLP reward system, while effective in the early phase of ecosystem development, has reached its natural evolution point and presents several limitations:
