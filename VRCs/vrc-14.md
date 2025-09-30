@@ -23,7 +23,7 @@ As the protocol matured beyond the bootstrap phase, providing direct support to 
 - Documentation of protocol economic principles 
 - A potential framework for future incentive programs
 
-For current Vana builder programs, see the docs.
+For current Vana builder programs, see [the docs](https://docs.vana.org).
 
 ## **Temporary Rewards Adjustment Until $1B TDVL**
 
