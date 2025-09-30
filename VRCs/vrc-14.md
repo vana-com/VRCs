@@ -14,6 +14,17 @@ Key changes include:
 
 This update establishes DLP tokens as first-class assets in the DataFi ecosystem, with market-driven price discovery that properly values data contributions while ensuring sufficient liquidity for both providers and consumers.
 
+## Status Update 
+
+**The broad-based DLP rewards program specified in this VRC has been superseded by a direct support model as of the start of Epoch 8.**
+
+As the protocol matured beyond the bootstrap phase, providing direct support to high-potential teams better serves protocol growth than distributed rewards. The mechanism was active for Epochs 6-7. This VRC remains as:
+- A technical reference for the reward mechanism design
+- Documentation of protocol economic principles 
+- A potential framework for future incentive programs
+
+For current Vana builder programs, see [the docs](https://docs.vana.org).
+
 ## **Temporary Rewards Adjustment Until $1B TDVL**
 
 Based on key learnings from the initial implementation, a **temporary adjustment to the scoring system** is being introduced.
@@ -116,6 +127,8 @@ The $1B threshold represents a maturity milestone where the ecosystem has demons
 - DLPs could provide kickbacks to companies and researchers paying fees to access their data, or convince random people to run jobs and pay fees without any goal in mind. The Vana Foundation will monitor for unusual activity and can ask questions about the commercial motivations behind data access to ensure it's being used for a legitimate use case rather than simply to mine rewards. 
 
 ## Implementation
+
+**Note: The implementation timeline below reflects the original rollout of this mechanism during Epochs 5-7. As of Epoch 8, the protocol transitioned to a direct support model (see Status Update above).**
 
 During Epoch 5:
 - Release all related VRCs for public comment, including: Data Access VRC, Data Token Standard VRC, This DLP Rewards Alignment VRC, laying out the technical specifications for the transition
