@@ -33,6 +33,11 @@ For a DLP to meet launch readiness standards, they must have:
 - Active social media presence with regular updates
 - Public communication channel (Twitter, Discord or Telegram)
 
+3. VRC Compliance
+- Must comply with VRC-20 (Data Asset Token)
+- Must comply with VRC-15 (Data Access)
+- Must implement any future VRCs marked as mandatory within the specified implementation timeline
+
 DLPs must actively maintain these launch readiness standards beyond initial registration. If a DLP no longer meets these standards, they would not be eligible for DLP rewards. 
 
 ## Rationale
@@ -41,7 +46,7 @@ These requirements ensure DLPs are launch ready while maintaining flexibility fo
 1. Data Infrastructure and Documentation
 - Provides a central hub for contributors and stakeholders
 - Maintains data schema documentation for data access requesters
-- Documents proof of contribution requirements for potential data access requesters. This requirement is particularly important alongside VRC-2's DLP performance metrics, which include unique wallets with verified data contributions, as it provides transparency into how DLPs verify contributions.
+- Documents proof of contribution requirements for potential data access requesters. This requirement is particularly important for data consumers as it provides transparency into how DLPs verify contributions.
 
 
 2. User Access and Community Engagement
@@ -54,20 +59,17 @@ Public data schemas and proof of contribution documentation provide essential tr
 
 The proof of contribution requirements ensure data integrity by establishing clear standards for verifying the quality and uniqueness of contributions from the minimum 100 data contributors.
 
-Accurate proof of contribution documentation is important alongside VRC-2 which introduces DLP performance metrics, the first of which is unique wallets with verified data contributions. DLPs must maintain robust proof of contribution implementations consistent with their documentation to remain eligible for rewards under these launch readiness standards.
+Accurate proof of contribution documentation is important alongside VRC-15, which introduces data access for data consumers. DLPs must maintain robust proof of contribution implementations consistent with their documentation to remain eligible for rewards under these launch readiness standards.
+
+Compliance with all mandatory VRCs is crucial for maintaining network standardization. Each VRC plays a specific role in ensuring the network can function as a cohesive ecosystem while maintaining individual DLP flexibility.
 
 ## Implementation
 
-Phase 1: UI Implementation (Start of Epoch 2)
-- DataHub interface will display DLP launch readiness status
-- Upon the start of Epoch 2, a 7-day grace period begins. For DLPs who partially meet requirements with a website or data contributor UI, no warning indicator is shown. For DLPs who do not yet have a website or data contributor UI, warning indicators will appear immediately at the start of Epoch 2.
-- After the 7-day grace period, warning indicators will appear for DLPs not meeting full requirements
-
-Phase 2: Smart Contract Integration (During Epoch 2)
 To be implemented during Epoch 2 and take effect for end-of-epoch rewards distribution:
-- Integration with rewards distribution mechanism
+
+- DataHub interface will display DLP launch readiness status
 - DLPs that do not meet launch readiness standards will not be eligible for rewards
-- Once smart contracts are in effect, DLPs that do not meet the launch readiness standards will not be eligible for users to stake with them
+- DLPs that do not comply with mandatory VRCs before Epoch 7 will not be eligible for rewards.
 
 ## Copyright
 
